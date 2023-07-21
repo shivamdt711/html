@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Learning Codes</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="bot.png">
+</head>
+<body>
+	<div class="form">
+
+<img src="bot.png" class="icon">
+
+<div class="name">
+<input type="text" placeholder="Enter your name" id="value-input">
+</div>
+<button onclick="submitValue()">Start</button>
+</div>
+<script>
+      function submitValue() {
+        // Get the value entered by the user
+        var input = document.getElementById('value-input');
+        var value = input.value;
+        
+        // Store the value in localStorage
+        localStorage.setItem('myValue', value);
+        
+        // Redirect to the second page
+        window.location.href = 'main.html';
+      }
+    </script>
+</body>
+</html>
